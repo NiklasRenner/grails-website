@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: website
+        defaultPackage: dk.renner.website
     spring:
         transactionManagement:
             proxies: false
