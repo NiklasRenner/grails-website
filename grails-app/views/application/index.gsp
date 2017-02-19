@@ -46,7 +46,7 @@
         </div>
     </div>
 
-    <section id="other-info">
+    <section class="success" id="other-info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
