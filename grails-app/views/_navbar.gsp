@@ -1,6 +1,6 @@
 <nav id="main-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-other">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>

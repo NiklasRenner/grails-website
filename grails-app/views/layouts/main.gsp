@@ -28,6 +28,7 @@
 
     <asset:javascript src="jquery.min.js"/>
     <asset:javascript src="bootstrap.min.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <asset:javascript src="freelancer.min.js"/>
     <asset:javascript src="app.js"/>
 

@@ -2,8 +2,7 @@
     <div class="footer-above">
         <div class="container">
             <div class="row">
-
-                <div class="footer-col col-md-6">
+                <div class="footer-col col-md-4">
                     <h3><g:message code="frontend.aroundTheWeb"/></h3>
                     <ul class="list-inline">
                         <li>
@@ -17,7 +16,7 @@
                     </ul>
                 </div>
 
-                <div class="footer-col col-md-6">
+                <div class="footer-col col-md-4">
                     <h3><g:message code="frontend.contact"/></h3>
 
                     <p>
@@ -27,6 +26,13 @@
 
                         <br><a href="tel:+4553545733"><i class="fa fa-mobile fa-lg"></i> +4553545733</a>
                     </p>
+                </div>
+
+                <div class="footer-col col-md-4">
+                    <h3><g:message code="frontend.source"/></h3>
+
+                    <a href="https://github.com/NiklasRenner/grails-website" class="btn-social btn-outline">
+                        <i class="fa fa-fw fa-github"></i></a>
                 </div>
             </div>
         </div>
