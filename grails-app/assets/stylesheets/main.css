@@ -1,0 +1,22 @@
+body {
+    padding-top: 50px;
+}
+
+#top-header {
+    background: linear-gradient(#87baf6, #87bad6);
+    /*background-color: #87bae6;*/
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.display-text {
+    font-size: 36px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.display-sub {
+    font-size: 18px;
+    color: whitesmoke;
+    font-style: italic;
+}
