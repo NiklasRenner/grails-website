@@ -13,30 +13,25 @@
 
                     <p class="lead">This is the frontpage of the new website.</p>
 
+                    <button class="btn btn-default" onclick="window.location='/insert'">Insert</button>
+
                     <table class="table table-bordered">
                         <thead>
+
                         <tr>
                             <td>id</td>
-                            <td>name</td>
-                            <td>token</td>
+                            <td>firstName</td>
+                            <td>lastName</td>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Niklas</td>
-                            <td>abc123</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>George</td>
-                            <td>dfgsd124</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Henning</td>
-                            <td>346543</td>
-                        </tr>
+                        <g:each in="${users}" var="user">
+                            <tr>
+                                <td>${user.id}</td>
+                                <td>${user.firstName}</td>
+                                <td>${user.lastName}</td>
+                            </tr>
+                        </g:each>
                         </tbody>
                     </table>
                 </div>

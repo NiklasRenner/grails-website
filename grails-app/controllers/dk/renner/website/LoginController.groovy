@@ -2,6 +2,8 @@ package dk.renner.website
 
 class LoginController {
 
-    def index() { }
+    def index() {
+        render view: 'index'
+    }
 
 }
