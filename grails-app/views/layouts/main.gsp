@@ -13,18 +13,23 @@
     <asset:stylesheet src="main.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
     <g:layoutHead/>
 </head>
 
 <body>
     <g:render template="/navbar"/>
-    <g:render template="/header"/>
 
     <g:layoutBody/>
 
+    <g:render template="/footer"/>
+
+    <asset:javascript src="jquery.min.js"/>
     <asset:javascript src="bootstrap.min.js"/>
     <asset:javascript src="freelancer.min.js"/>
+    <asset:javascript src="app.js"/>
+
 </body>
 </html>

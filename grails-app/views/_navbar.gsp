@@ -1,20 +1,20 @@
 <nav id="main-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
-        <div class="navbar-header page-scroll">
+        <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-other">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <g:link controller="application" class="active navbar-brand">Home</g:link>
+            <g:link controller="application" class="navbar-brand">
+                <g:message code="frontend.home"/>
+            </g:link>
         </div>
 
-        <nav class="collapse navbar-collapse" id="navbar-other">
+        <div class="collapse navbar-collapse" id="navbar-other">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/about">About</a></li>
-                <li><g:link controller="login" action="index">Login</g:link></li>
+                <li><a href="#footer"><g:message code="frontend.contact"/></a></li>
+                <li><a href="#other-info"><g:message code="frontend.about"/></a></li>
+                <li><g:link controller="login" action="index"><g:message code="frontend.login"/></g:link></li>
             </ul>
-        </nav>
+        </div>
     </div>
 </nav>
