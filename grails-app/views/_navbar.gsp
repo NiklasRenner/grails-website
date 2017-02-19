@@ -1,22 +1,19 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" id="top">
+<nav id="main-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-other">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="active navbar-brand" href="/">Home</a>
+            <g:link controller="application" class="active navbar-brand">Home</g:link>
         </div>
 
         <nav class="collapse navbar-collapse" id="navbar-other">
-            <ul class="nav navbar-nav">
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/login">Login</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><g:link controller="login" action="index">Login</g:link></li>
             </ul>
         </nav>
     </div>
