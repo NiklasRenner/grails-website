@@ -21,7 +21,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <asset:image src="span.png" class="img-responsive"/>
+            <asset:image src="span.jpg" class="img-responsive"/>
         </div>
     </div>
 
