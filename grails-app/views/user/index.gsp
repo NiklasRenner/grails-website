@@ -1,6 +1,6 @@
 <head>
     <meta name="layout" content="main"/>
-    <title><g:message code="frontend.users"/></title>
+    <title><g:message code="frontend.stats"/></title>
 </head>
 
 <body>
