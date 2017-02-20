@@ -5,8 +5,6 @@ import grails.transaction.Transactional
 @Transactional
 class ApplicationController {
 
-    def index() {
-        render view: 'index'
-    }
+    def index() {}
 
 }

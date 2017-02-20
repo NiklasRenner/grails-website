@@ -8,7 +8,7 @@ class UserController {
 
     @Secured('ROLE_ADMIN')
     def index() {
-        render view: 'index', model: [users: User.all]
+        [users: User.all]
     }
 
 }
