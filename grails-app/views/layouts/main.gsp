@@ -7,9 +7,9 @@
 
     <title><g:layoutTitle default="NiklasRenner.dk"/></title>
 
-    <asset:stylesheet src="bootstrap.min.css"/>
-    <asset:stylesheet src="font-awesome.min.css"/>
-    <asset:stylesheet src="freelancer.min.css"/>
+    <asset:stylesheet src="bootstrap.css"/>
+    <asset:stylesheet src="font-awesome.css"/>
+    <asset:stylesheet src="freelancer.css"/>
     <asset:stylesheet src="main.css"/>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -26,9 +26,9 @@
 
     <g:render template="/footer"/>
 
-    <asset:javascript src="jquery.min.js"/>
-    <asset:javascript src="bootstrap.min.js"/>
-    <asset:javascript src="freelancer.min.js"/>
+    <asset:javascript src="jquery.js"/>
+    <asset:javascript src="bootstrap.js"/>
+    <asset:javascript src="freelancer.js"/>
     <asset:javascript src="app.js"/>
 
 </body>

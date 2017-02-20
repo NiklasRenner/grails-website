@@ -126,3 +126,23 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+# Added for the Spring Security Core plugin:
+---
+grails:
+  plugin:
+    springsecurity :
+      logout.filterProcessesUrl: '/logout'
+      failureHandler.defaultFailureUrl: '/login?error=true'
+      auth.loginFormUrl: '/login'
+      userLookup.userDomainClassName: 'dk.renner.website.User'
+      userLookup.authorityJoinClassName: 'dk.renner.website.UserRole'
+      authority.className: 'dk.renner.website.Role'
+      adh.errorPage: '/user/denied'
+      controllerAnnotations.staticRules:
+        - pattern: '/**'
+          access: ['permitAll']
+        - pattern: '/login/**'
+          access: ['permitAll']
+        - pattern: '/assets/**'
+          access: ['permitAll']

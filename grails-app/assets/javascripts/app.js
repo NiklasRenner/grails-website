@@ -11,4 +11,3 @@ var resizeMargin = function () {
 $(document).ready(resizeMargin);
 
 $(window).resize(resizeMargin);
-

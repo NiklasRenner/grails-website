@@ -12,28 +12,7 @@
                     <h1 class="page-header">Welcome</h1>
 
                     <p class="lead">This is the frontpage of the new website.</p>
-
-                    <button class="btn btn-default" onclick="window.location='/insert'">Insert</button>
-
-                    <table class="table table-bordered">
-                        <thead>
-
-                        <tr>
-                            <td>id</td>
-                            <td>firstName</td>
-                            <td>lastName</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <g:each in="${users}" var="user">
-                            <tr>
-                                <td>${user.id}</td>
-                                <td>${user.firstName}</td>
-                                <td>${user.lastName}</td>
-                            </tr>
-                        </g:each>
-                        </tbody>
-                    </table>
+                </table>
                 </div>
             </div>
         </div>
@@ -59,4 +38,3 @@
     </section>
 
 </body>
-</html>
