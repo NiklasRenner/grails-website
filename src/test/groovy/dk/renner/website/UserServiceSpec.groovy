@@ -3,12 +3,12 @@ package dk.renner.website
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
-@TestFor(RequestInfoService)
-class RequestInfoServiceSpec extends Specification {
+@TestFor(UserService)
+class UserServiceSpec extends Specification {
 
     def "test"() {
         when:
-            service.findLastRequests()
+            service.findAll()
 
         then:
             true

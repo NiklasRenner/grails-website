@@ -5,8 +5,12 @@ import grails.transaction.Transactional
 @Transactional
 class RequestInfoService {
 
-    List<RequestInfo> getRequests() {
-        RequestInfo.all
+    List<RequestInfo> findLastRequests() {
+        RequestInfo.list max: 10, sort: 'requestTime', order: 'desc'
+    }
+
+    Integer countAll() {
+        RequestInfo.count
     }
 
 }
