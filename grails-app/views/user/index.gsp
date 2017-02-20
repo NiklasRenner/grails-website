@@ -8,15 +8,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Users</h1>
+                    <h1 class="page-header"><g:message code="frontend.users"/></h1>
 
-                    <table class="table table-bordered">
+                    <table class="table table-striped">
                         <thead>
 
                         <tr>
-                            <td>username</td>
-                            <td>encrypted password</td>
-                            <td>roles (comma-separated)</td>
+                            <td><g:message code="frontend.username"/></td>
+                            <td><g:message code="frontend.encryptedPassword"/></td>
+                            <td><g:message code="frontend.roles"/></td>
                         </tr>
                         </thead>
                         <tbody>
