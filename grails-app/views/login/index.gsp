@@ -1,6 +1,6 @@
 <head>
     <meta name="layout" content="main"/>
-    <title>Login</title>
+    <title><g:message code="frontend.login"/></title>
 </head>
 
 <body>
@@ -15,7 +15,8 @@
                     </sec:ifLoggedIn>
 
                     <sec:ifNotLoggedIn>
-                        <g:form name="login-form" method="POST" url="/login/authenticate" class="form-signin" autocomplete="off">
+                        <g:form name="login-form" method="POST" controller="login" action="authenticate"
+                                class="form-signin">
                             <h1 class="page-header"><g:message code="frontend.login"/></h1>
 
                             <div class="row control-group">
@@ -23,7 +24,6 @@
                                     <label><g:message code="frontend.username"/></label>
                                     <g:field type="text" name="username" class="form-control" required=""
                                              placeholder="${message(code: 'frontend.username')}"/>
-                                    <p class="help-block text-danger"></p>
                                 </div>
                             </div>
 

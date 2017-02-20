@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Welcome</h1>
+                    <h1 class="page-header sub-header">Welcome</h1>
 
                     <p class="lead">This is the frontpage of the new website.</p>
                 </table>
@@ -29,7 +29,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Other info</h1>
+                    <h1 class="page-header sub-header">Other info</h1>
 
                     <p class="lead">Some other info goes here maybe?</p>
                 </div>

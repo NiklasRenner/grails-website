@@ -13,8 +13,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#footer"><g:message code="frontend.contact"/></a></li>
                 <sec:ifLoggedIn>
-                    <li><g:link controller="user" action="index"><g:message code="frontend.users"/></g:link></li>
-                    <li><a href="/logout"><g:message code="frontend.logout"/></a></li>
+                    <li><g:link controller="user" action="index"><g:message code="frontend.stats"/></g:link></li>
+                    <li><g:link url="/logout"><g:message code="frontend.logout"/></g:link></li>
                 </sec:ifLoggedIn>
                 <sec:ifNotLoggedIn>
                     <li><g:link controller="login" action="index"><g:message code="frontend.login"/></g:link></li>

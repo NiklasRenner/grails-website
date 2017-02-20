@@ -1,4 +1,4 @@
-package dk.renner.website
+package dk.renner.website.controllers
 
 import grails.transaction.Transactional
 

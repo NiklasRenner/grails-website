@@ -1,3 +1,19 @@
+/*make header image dynamic size*/
 .img-circle {
     width: 40%;
+}
+
+/*fix header margin being a bit large*/
+.page-header {
+    margin-top: 70px;
+}
+
+/*new class to make sub-page-headers margin disappear at the top*/
+.sub-header {
+    margin-top: 0;
+}
+
+/*fix success & hover making table rows all white when hovering over them*/
+.success .table-hover tbody tr:hover {
+    color: #18BC9C;
 }

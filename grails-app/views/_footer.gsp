@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; NiklasRenner.dk 2017
+                    Copyright &copy; catnip.dk 2017
                 </div>
             </div>
         </div>

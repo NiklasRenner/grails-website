@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title><g:layoutTitle default="NiklasRenner.dk"/></title>
+    <title><g:layoutTitle default="catnip.dk"/></title>
 
     <asset:stylesheet src="bootstrap.css"/>
     <asset:stylesheet src="font-awesome.css"/>

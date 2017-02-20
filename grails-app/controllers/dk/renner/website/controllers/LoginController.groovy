@@ -1,4 +1,4 @@
-package dk.renner.website
+package dk.renner.website.controllers
 
 class LoginController {
 
