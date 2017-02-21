@@ -4,7 +4,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-other">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <g:link controller="application" action="index" class="navbar-brand">
+            <g:link mapping="index" class="navbar-brand">
                 <g:message code="frontend.home"/>
             </g:link>
         </div>
@@ -18,7 +18,7 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <g:link controller="scribbler" action="create">
+                            <g:link mapping="scribblerCreate">
                                 <g:message code="frontend.scribbler"/>
                             </g:link>
                         </li>
@@ -31,7 +31,7 @@
                 </li>
                 <sec:ifLoggedIn>
                     <li>
-                        <g:link controller="stats" action="index">
+                        <g:link mapping="statsIndex">
                             <g:message code="frontend.stats"/>
                         </g:link>
                     </li>
@@ -43,7 +43,7 @@
                 </sec:ifLoggedIn>
                 <sec:ifNotLoggedIn>
                     <li>
-                        <g:link controller="login" action="index">
+                        <g:link mapping="login">
                             <g:message code="frontend.login"/>
                         </g:link>
                     </li>

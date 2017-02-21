@@ -3,7 +3,7 @@
 </head>
 
 <body>
-    <g:render template="/header"/>
+    <g:render template="header"/>
 
     <section id="info">
         <div class="container">

@@ -15,8 +15,7 @@
                     </sec:ifLoggedIn>
 
                     <sec:ifNotLoggedIn>
-                        <g:form name="login-form" method="POST" controller="login" action="authenticate"
-                                class="form-signin">
+                        <g:form name="login-form" method="POST" url="/login/authenticate" class="form-signin">
                             <h1 class="page-header"><g:message code="frontend.login"/></h1>
 
                             <div class="row control-group">
