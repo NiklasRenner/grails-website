@@ -17,19 +17,19 @@
         </div>
     </section>
 
-    <section class="success" id="link">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header sub-header">Links</h1>
+    %{--<section class="success" id="link">--}%
+        %{--<div class="container">--}%
+            %{--<div class="row">--}%
+                %{--<div class="col-lg-12">--}%
+                    %{--<h1 class="page-header sub-header">Links</h1>--}%
 
-                    <p class="lead">
-                        <g:link mapping="scribblerShow" id="${scribble.id}">THIS</g:link>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+                    %{--<p class="lead">--}%
+                        %{--<g:link mapping="scribblerShow" id="${scribble.id}">THIS</g:link>--}%
+                    %{--</p>--}%
+                %{--</div>--}%
+            %{--</div>--}%
+        %{--</div>--}%
+    %{--</section>--}%
 
 </body>
 </html>

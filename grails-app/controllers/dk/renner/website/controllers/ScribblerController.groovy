@@ -7,7 +7,6 @@ class ScribblerController {
     def create() {}
 
     def show() {
-        log.error params.id
         String id = params.id
 
         [scribble: Scribble.findById(id)]
