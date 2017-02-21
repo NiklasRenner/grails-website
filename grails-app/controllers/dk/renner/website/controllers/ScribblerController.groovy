@@ -1,15 +1,23 @@
 package dk.renner.website.controllers
 
 import dk.renner.website.Scribble
+import dk.renner.website.ScribbleService
 
 class ScribblerController {
 
-    def create() {}
+    ScribbleService scribbleService
+
+    def create() {
+        [scribbles: scribbleService.findLastScribbles()]
+    }
 
     def show() {
         String id = params.id
 
-        [scribble: Scribble.findById(id)]
+        //TODO impl: error handling
+        Scribble scribble = scribbleService.find(id)
+
+        [scribble: scribble, link: scribbleService.createLink(scribble.id)]
     }
 
     def post() {
@@ -18,7 +26,7 @@ class ScribblerController {
         scribble.data = params.text?.bytes
 
         //TODO impl: error handling
-        scribble.save flush: true
+        scribbleService.save(scribble)
 
         redirect mapping: 'scribblerShow', params: [id: scribble.id]
     }

@@ -11,7 +11,7 @@
                     <sec:ifLoggedIn>
                         <h1 class="page-header">Logged in</h1>
 
-                        <p>User: <sec:username/></p>
+                        <p><g:message code="frontend.username"/>: <sec:username/></p>
                     </sec:ifLoggedIn>
 
                     <sec:ifNotLoggedIn>

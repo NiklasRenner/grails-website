@@ -5,6 +5,7 @@ class Scribble {
     String id
     String title
     byte[] data
+    Date dateCreated
 
     static constraints = {
         id unique: true

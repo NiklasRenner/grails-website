@@ -29,6 +29,7 @@
     <asset:javascript src="jquery.js"/>
     <asset:javascript src="bootstrap.js"/>
     <asset:javascript src="freelancer.js"/>
+    <asset:javascript src="clipboard.js"/>
     <asset:javascript src="app.js"/>
 
 </body>

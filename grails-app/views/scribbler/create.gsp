@@ -42,12 +42,43 @@
 
     <section class="success">
         <div class="container">
-            <div class="row">
-                <h1 class="page-header sub-header"><g:message code="frontend.scribbles"/></h1>
+            <div class="row control-group">
+                <div class="col-lg-12">
+                    <h1 class="page-header sub-header"><g:message code="frontend.scribbles"/></h1>
 
-                <p class="lead">
-                    <g:message code="frontend.scribbles.about"/>
-                </p>
+                    <p class="lead">
+                        <g:message code="frontend.scribbles.about"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="last-ten">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header sub-header"><g:message code="frontend.lastTen"/></h1>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <td><g:message code="frontend.id"/></td>
+                            <td><g:message code="frontend.title"/></td>
+                            <td><g:message code="frontend.timeOfCreation"/></td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <g:each in="${scribbles}" var="scribble">
+                            <tr>
+                                <td><g:link mapping="scribblerShow" id="${scribble.id}">${scribble.id}</g:link></td>
+                                <td>${scribble.title}</td>
+                                <td><g:formatDate date="${scribble.dateCreated}"/></td>
+                            </tr>
+                        </g:each>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
