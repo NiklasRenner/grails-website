@@ -6,7 +6,7 @@ import grails.plugin.springsecurity.annotation.Secured
 import grails.transaction.Transactional
 
 @Transactional
-class UserController {
+class StatsController {
 
     RequestInfoService requestInfoService
     UserService userService

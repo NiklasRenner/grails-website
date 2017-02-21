@@ -111,7 +111,7 @@ if $cygwin ; then
         SEP="|"
     done
     OURCYGPATTERN="(^($ROOTDIRS))"
-    # Add a user-defined pattern to the cygpath arguments
+    # Add a stats-defined pattern to the cygpath arguments
     if [ "$GRAILS_CYGPATTERN" != "" ] ; then
         OURCYGPATTERN="$OURCYGPATTERN|($GRAILS_CYGPATTERN)"
     fi

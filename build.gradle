@@ -1,3 +1,6 @@
+version "0.1"
+group "dk.renner.website"
+
 buildscript {
     repositories {
         mavenLocal()
@@ -7,18 +10,16 @@ buildscript {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.11.6"
         classpath "org.grails.plugins:hibernate5:6.0.7"
+        classpath 'org.grails.plugins:database-migration:3.0.0'
     }
 }
 
-version "0.1"
-group "dk.renner.website"
-
-apply plugin:"eclipse"
-apply plugin:"idea"
-apply plugin:"war"
-apply plugin:"org.grails.grails-web"
-apply plugin:"org.grails.grails-gsp"
-apply plugin:"asset-pipeline"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "war"
+apply plugin: "org.grails.grails-web"
+apply plugin: "org.grails.grails-gsp"
+apply plugin: "asset-pipeline"
 
 repositories {
     mavenLocal()
@@ -29,7 +30,7 @@ dependencyManagement {
     imports {
         mavenBom "org.grails:grails-bom:$grailsVersion"
     }
-    applyMavenExclusions false
+    applyMavenExclusions true
 }
 
 dependencies {
@@ -50,6 +51,12 @@ dependencies {
     compile "org.hibernate:hibernate-ehcache:5.1.2.Final"
     compile 'org.grails.plugins:spring-security-core:3.1.1'
 
+    // Database migration plugin and recommended liquibase dependency
+    // See http://grails-plugins.github.io/grails-database-migration/3.0.x/index.html
+    compile "org.grails.plugins:database-migration:3.0.0"
+    compile 'org.liquibase:liquibase-core:3.5.3'
+    compile 'postgresql:postgresql:9.0-801.jdbc4'
+
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.11.6"
     runtime "com.h2database:h2"
 
@@ -64,8 +71,15 @@ bootRun {
     jvmArgs('-Dspring.output.ansi.enabled=always')
 }
 
-
 assets {
     minifyJs = true
     minifyCss = true
+}
+
+sourceSets {
+    main {
+        resources {
+            srcDir 'grails-app/migrations'
+        }
+    }
 }

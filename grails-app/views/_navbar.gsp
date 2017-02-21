@@ -11,13 +11,42 @@
 
         <div class="collapse navbar-collapse" id="navbar-other">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#footer"><g:message code="frontend.contact"/></a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <g:message code="frontend.tools"/>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <g:link controller="scribbler" action="create">
+                                <g:message code="frontend.scribbler"/>
+                            </g:link>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#footer" class="close-on-click">
+                        <g:message code="frontend.contact"/>
+                    </a>
+                </li>
                 <sec:ifLoggedIn>
-                    <li><g:link controller="user" action="index"><g:message code="frontend.stats"/></g:link></li>
-                    <li><g:link url="/logout"><g:message code="frontend.logout"/></g:link></li>
+                    <li>
+                        <g:link controller="stats" action="index">
+                            <g:message code="frontend.stats"/>
+                        </g:link>
+                    </li>
+                    <li>
+                        <g:link url="/logout">
+                            <g:message code="frontend.logout"/>
+                        </g:link>
+                    </li>
                 </sec:ifLoggedIn>
                 <sec:ifNotLoggedIn>
-                    <li><g:link controller="login" action="index"><g:message code="frontend.login"/></g:link></li>
+                    <li>
+                        <g:link controller="login" action="index">
+                            <g:message code="frontend.login"/>
+                        </g:link>
+                    </li>
                 </sec:ifNotLoggedIn>
             </ul>
         </div>

@@ -1572,7 +1572,7 @@ getText = Sizzle.getText = function( elem ) {
 
 Expr = Sizzle.selectors = {
 
-	// Can be adjusted by the user
+	// Can be adjusted by the stats
 	cacheLength: 50,
 
 	createPseudo: markFunction,
@@ -1848,7 +1848,7 @@ Expr = Sizzle.selectors = {
 				fn = Expr.pseudos[ pseudo ] || Expr.setFilters[ pseudo.toLowerCase() ] ||
 					Sizzle.error( "unsupported pseudo: " + pseudo );
 
-			// The user may use createPseudo to indicate that
+			// The stats may use createPseudo to indicate that
 			// arguments are needed to create the filter function
 			// just as Sizzle does
 			if ( fn[ expando ] ) {
@@ -3685,7 +3685,7 @@ jQuery.ready.promise = function( obj ) {
 	return readyList.promise( obj );
 };
 
-// Kick off the DOM ready check even if the user does not
+// Kick off the DOM ready check even if the stats does not
 jQuery.ready.promise();
 
 
@@ -3884,7 +3884,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ) {
 	thisCache = cache[ id ];
 
 	// jQuery data() is stored in a separate object inside the object's internal data
-	// cache in order to avoid key collisions between internal data and user-defined
+	// cache in order to avoid key collisions between internal data and stats-defined
 	// data.
 	if ( !pvt ) {
 		if ( !thisCache.data ) {
@@ -5683,7 +5683,7 @@ if ( !support.submit ) {
 
 		postDispatch: function( event ) {
 
-			// If form was submitted by the user, bubble the event up the tree
+			// If form was submitted by the stats, bubble the event up the tree
 			if ( event._submitBubble ) {
 				delete event._submitBubble;
 				if ( this.parentNode && !event.isTrigger ) {
@@ -9902,7 +9902,7 @@ jQuery._evalUrl = function( url ) {
 	return jQuery.ajax( {
 		url: url,
 
-		// Make this explicit, since user can override this through ajaxSetup (#11264)
+		// Make this explicit, since stats can override this through ajaxSetup (#11264)
 		type: "GET",
 		dataType: "script",
 		cache: true,
@@ -10615,7 +10615,7 @@ jQuery.fn.load = function( url, params, callback ) {
 
 			// If "type" variable is undefined, then "GET" method will be used.
 			// Make value of this field explicit since
-			// user can override it through ajaxSetup method
+			// stats can override it through ajaxSetup method
 			type: type || "GET",
 			dataType: "html",
 			data: params

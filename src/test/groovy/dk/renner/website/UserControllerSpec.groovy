@@ -1,13 +1,13 @@
 package dk.renner.website
 
-import dk.renner.website.controllers.UserController
+import dk.renner.website.controllers.StatsController
 import grails.test.mixin.Mock
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
 @Mock([RequestInfo, User])
-@TestFor(UserController)
-class UserControllerSpec extends Specification {
+@TestFor(StatsController)
+class StatsControllerSpec extends Specification {
 
     def setup() {
         controller.userService = Mock(UserService)

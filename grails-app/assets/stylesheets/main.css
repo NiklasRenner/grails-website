@@ -17,3 +17,41 @@
 .success .table-hover tbody tr:hover {
     color: #18BC9C;
 }
+
+/*style dropdown like rest of bootstrap theme*/
+.navbar-custom .dropdown-menu {
+    min-width: 0;
+    background: #2C3E50;
+}
+
+.navbar-custom .dropdown-menu li a {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 15px 15px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.navbar-custom .dropdown-menu li a:hover {
+    color: #18BC9C;
+    background: #2C3E50;
+}
+
+@media (max-width: 767px) {
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+        padding-left: 15px;
+    }
+
+    .navbar-custom .navbar-nav .open .dropdown-menu > li {
+        padding: 5px 10px;
+    }
+
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #18BC9C;
+    }
+}
+
