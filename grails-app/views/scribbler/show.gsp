@@ -11,7 +11,7 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">${scribble.title}
 
-                        <button class="btn btn-lg btn-success" data-clipboard-action="copy" data-clipboard-demo=""
+                        <button class="btn btn-lg btn-success" data-clipboard-action="copy" data-clipboard-copy-link=""
                                 data-clipboard-text="${link}">
                             <g:message code="frontend.copyLink"/>
                         </button>

@@ -46,7 +46,7 @@ databaseChangeLog = {
 
     changeSet(author: "renner (generated)", id: "1487696804275-4") {
         createTable(tableName: "scribble") {
-            column(name: "id", type: "VARCHAR(255)") {
+            column(name: "id", type: "UUID") {
                 constraints(nullable: "false")
             }
 

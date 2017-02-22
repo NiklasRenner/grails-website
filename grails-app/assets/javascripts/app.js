@@ -13,7 +13,7 @@ $(document).ready(resizeMargin);
 $(window).resize(resizeMargin);
 
 //added listener for clipboard.js
-var clipboardDemos = new Clipboard('[data-clipboard-demo]');
+var clipboardDemos = new Clipboard('[data-clipboard-copy-link]');
 clipboardDemos.on('success', function (e) {
     e.clearSelection();
     console.info('Action:', e.action);

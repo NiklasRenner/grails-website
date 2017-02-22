@@ -13,15 +13,15 @@ class ScribbleService {
     }
 
     Scribble find(String id) {
-        Scribble.findById id
+        Scribble.findById UUID.fromString(id)
     }
 
     Scribble save(Scribble scribble) {
         scribble.save flush: true
     }
 
-    String createLink(String id) {
-        grailsLinkGenerator.link absolute: true, mapping: 'scribblerShow', id: id
+    String createLink(UUID id) {
+        grailsLinkGenerator.link absolute: true, mapping: 'scribblerShow', id: id.toString()
     }
 
 }
