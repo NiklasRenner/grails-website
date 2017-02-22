@@ -56,7 +56,7 @@
                             <tr>
                                 <td>${requestInfo.clientIp}</td>
                                 <td>${requestInfo.requestUri}</td>
-                                <td><g:formatDate date="${requestInfo.requestTime}"/></td>
+                                <td><g:formatDate date="${requestInfo.dateCreated}"/></td>
                             </tr>
                         </g:each>
                         </tbody>

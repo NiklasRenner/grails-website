@@ -96,7 +96,7 @@ dataSource:
     password:
 
 environments:
-    test:
+    development:
         hibernate:
             dialect: 'org.hibernate.dialect.PostgreSQL9Dialect'
         dataSources:
@@ -120,8 +120,8 @@ environments:
                     adm:
                         updateOnStart: false
                         updateOnStartDefaultSchema: website
-                        changelogFileName: changelog.groovy
-    development:
+                        changelogFileName: changelog-adm.groovy
+    test:
         dataSource:
             dbCreate: update
             url: jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
@@ -149,7 +149,7 @@ environments:
                     adm:
                         updateOnStart: false
                         updateOnStartDefaultSchema: website
-                        changelogFileName: changelog.groovy
+                        changelogFileName: changelog-adm.groovy
 
 
 # Added for the Spring Security Core plugin:
@@ -161,8 +161,8 @@ grails:
       failureHandler.defaultFailureUrl: '/login?error=true'
       auth.loginFormUrl: '/login'
       userLookup.userDomainClassName: 'dk.renner.website.User'
-      userLookup.authorityJoinClassName: 'dk.renner.website.UserRole'
-      authority.className: 'dk.renner.website.Role'
+      userLookup.authorityJoinClassName: 'dk.renner.website.UserAuthorityority'
+      authority.className: 'dk.renner.website.Authorityority'
       adh.errorPage: '/user/denied'
       controllerAnnotations.staticRules:
         - pattern: '/**'

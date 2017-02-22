@@ -17,5 +17,6 @@ class Role implements Serializable {
 
 	static mapping = {
 		cache true
+		table name: 'roles'
 	}
 }

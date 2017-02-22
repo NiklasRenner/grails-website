@@ -7,7 +7,7 @@ class RequestInfo {
 
     String clientIp
     String requestUri
-    Date requestTime
+    Date dateCreated
 
     static constraints = {
     }

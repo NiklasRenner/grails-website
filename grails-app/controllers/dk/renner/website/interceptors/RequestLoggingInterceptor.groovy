@@ -11,7 +11,7 @@ class RequestLoggingInterceptor {
 
     boolean before() {
         RequestInfo.withTransaction {
-            def requestInfo = new RequestInfo(clientIp: request.remoteAddr, requestUri: request.requestURI, requestTime: new Date()).save flush: true
+            def requestInfo = new RequestInfo(clientIp: request.remoteAddr, requestUri: request.requestURI).save flush: true
             log.info "IP [$requestInfo.clientIp] requested URI [$requestInfo.requestUri]"
         }
 
@@ -23,4 +23,5 @@ class RequestLoggingInterceptor {
     void afterView() {
         // no-op
     }
+
 }
