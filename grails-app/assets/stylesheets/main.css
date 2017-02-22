@@ -20,7 +20,6 @@
 
 /*style dropdown like rest of bootstrap theme*/
 .navbar-custom .dropdown-menu {
-    min-width: 0;
     background: #2C3E50;
 }
 
