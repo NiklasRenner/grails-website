@@ -8,8 +8,7 @@
         <div class="container">
             <div class="row control-group">
                 <div class="col-lg-12">
-                    <g:form name="login-form" method="POST" controller="scribbler" action="post"
-                            class="form-signin">
+                    <g:form name="scribbler-form" method="POST" mapping="scribblerPost" class="form-signin">
                         <h1 class="page-header"><g:message code="frontend.createScribble"/></h1>
 
                         <div class="row control-group">
@@ -23,7 +22,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Text</label>
-                                <g:textArea name="text" class="form-control" rows="10" required=""
+                                <g:textArea name="data" class="form-control" rows="10" required=""
                                             placeholder="${message(code: 'frontend.scribblePlaceholder')}"/>
                             </div>
                         </div>

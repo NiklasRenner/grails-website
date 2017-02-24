@@ -13,7 +13,11 @@ class ScribbleService {
     }
 
     Scribble find(String id) {
-        Scribble.findById UUID.fromString(id)
+        try {
+            Scribble.findById UUID.fromString(id)
+        } catch (_) {
+            null
+        }
     }
 
     Scribble save(Scribble scribble) {

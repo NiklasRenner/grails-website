@@ -1,9 +1,12 @@
 package dk.renner.website
 
+import grails.databinding.BindUsing
+
 class Scribble {
 
     UUID id
     String title
+    @BindUsing({ obj, source -> return source['data']?.bytes })
     byte[] data
     Date dateCreated
 
@@ -13,7 +16,7 @@ class Scribble {
     }
 
     static mapping = {
-        id generator : 'uuid2'
+        id generator: 'uuid2'
     }
 
 }

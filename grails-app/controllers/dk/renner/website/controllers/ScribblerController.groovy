@@ -14,19 +14,25 @@ class ScribblerController {
     def show() {
         String id = params.id
 
-        //TODO impl: error handling
-        Scribble scribble = scribbleService.find(id)
+        Scribble scribble = scribbleService.find id
+
+        if (!scribble) {
+            return redirect(url: '/404')
+        }
 
         [scribble: scribble, link: scribbleService.createLink(scribble.id)]
     }
 
-    def post() {
-        Scribble scribble = new Scribble()
-        bindData(scribble, params)
-        scribble.data = params.text?.bytes
+    def post(Scribble scribble) {
+        //TODO REVIEW: 'method' in named url mappings for some reason doesn't work,
+        // so 'GET' on '/scribbler/post' results in this method being called,
+        // when it should only ever be called when using 'POST'.
+        // this is why '!scribble' is used.
+        if (!scribble || !scribble.validate()) {
+            return redirect(url: '/500')
+        }
 
-        //TODO impl: error handling
-        scribbleService.save(scribble)
+        scribbleService.save scribble
 
         redirect mapping: 'scribblerShow', params: [id: scribble.id]
     }

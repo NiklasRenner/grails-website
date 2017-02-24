@@ -10,10 +10,16 @@ class UrlMappings {
             method = 'GET'
         }
 
-        //paster
+        //scribbler
         name scribblerCreate: "/scribbler" {
             controller = 'scribbler'
             action = 'create'
+            method = 'GET'
+        }
+
+        name scribblerShow: "/scribbler/$id" {
+            controller = 'scribbler'
+            action = 'show'
             method = 'GET'
         }
 
@@ -21,12 +27,6 @@ class UrlMappings {
             controller = 'scribbler'
             action = 'post'
             method = 'POST'
-        }
-
-        name scribblerShow: "/scribbler/$id" {
-            controller = 'scribbler'
-            action = 'show'
-            method = 'GET'
         }
 
         //locked to admin

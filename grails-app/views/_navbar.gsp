@@ -30,11 +30,21 @@
                     </a>
                 </li>
                 <sec:ifLoggedIn>
-                    <li>
-                        <g:link mapping="statsIndex">
-                            <g:message code="frontend.stats"/>
-                        </g:link>
-                    </li>
+                    <sec:ifAllGranted roles="ROLE_ADMIN">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <g:message code="frontend.administration"/>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <g:link mapping="statsIndex">
+                                        <g:message code="frontend.stats"/>
+                                    </g:link>
+                                </li>
+                            </ul>
+                        </li>
+                    </sec:ifAllGranted>
                     <li>
                         <g:link url="/logout">
                             <g:message code="frontend.logout"/>
