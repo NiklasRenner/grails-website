@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#footer" class="close-on-click">
+                    <a href="#contact" class="close-on-click">
                         <g:message code="frontend.contact"/>
                     </a>
                 </li>

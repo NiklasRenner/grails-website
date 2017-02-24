@@ -6,10 +6,15 @@ class BootStrap {
 
     def init = { servletContext ->
         if (Environment.current == Environment.TEST) {
-            User user = new User(username: 'Test', password: 'Test').save flush: true
-            Role role = new Role(authority: 'ROLE_ADMIN').save flush: true
+            User.withTransaction {
+                def roleAdmin = new Role(authority: 'ROLE_ADMIN').save flush: true, failOnError: true
+                def userAdmin = new User(username: 'TestAdmin', password: 'TestAdmin').save flush: true, failOnError: true
+                UserRole.create userAdmin, roleAdmin
 
-            UserRole.create user, role
+                def roleUser = new Role(authority: 'ROLE_USER').save flush: true, failOnError: true
+                def userUser = new User(username: 'TestUser', password: 'TestUser').save flush: true, failOnError: true
+                UserRole.create userUser, roleUser
+            }
         }
     }
 

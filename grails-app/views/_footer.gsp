@@ -1,4 +1,4 @@
-<footer class="text-center" id="footer">
+<footer class="text-center" id="contact">
     <div class="footer-above">
         <div class="container">
             <div class="row">
