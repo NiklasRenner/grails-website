@@ -54,3 +54,20 @@
     }
 }
 
+/*halfhearted styled select*/
+select {
+    border: none;
+    background: white;
+    color: darkred;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+select:focus {
+
+    border: none;
+}
+

@@ -1,6 +1,6 @@
 package dk.renner.website.controllers
 
-import dk.renner.website.ScribbleService
+import dk.renner.website.scribble.ScribbleService
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
@@ -13,7 +13,7 @@ class ScribblerControllerSpec extends Specification {
 
     def "test"() {
         when:
-            controller.create()
+            controller.index()
 
         then:
             1 * controller.scribbleService.findLastScribbles()

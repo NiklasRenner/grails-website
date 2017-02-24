@@ -1,7 +1,6 @@
 package dk.renner.website.interceptors
 
-import dk.renner.website.RequestInfo
-
+import dk.renner.website.request.RequestInfo
 
 class RequestLoggingInterceptor {
 

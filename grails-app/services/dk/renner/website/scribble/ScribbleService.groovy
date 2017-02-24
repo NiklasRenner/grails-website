@@ -1,5 +1,6 @@
-package dk.renner.website
+package dk.renner.website.scribble
 
+import dk.renner.website.util.Utils
 import grails.transaction.Transactional
 import grails.web.mapping.LinkGenerator
 
@@ -13,19 +14,20 @@ class ScribbleService {
     }
 
     Scribble find(String id) {
-        try {
-            Scribble.findById UUID.fromString(id)
-        } catch (_) {
-            null
-        }
+        Scribble.findById Utils.toUuid(id)
     }
 
     Scribble save(Scribble scribble) {
-        scribble.save flush: true
+        def saved = scribble.save flush: true
+
+        saved && log.info("Scribble created [id: $saved.id, title: $saved.title]")
+
+        saved
     }
 
     String createLink(UUID id) {
         grailsLinkGenerator.link absolute: true, mapping: 'scribblerShow', id: id.toString()
     }
+
 
 }

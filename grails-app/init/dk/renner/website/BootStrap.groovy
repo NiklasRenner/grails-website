@@ -1,5 +1,8 @@
 package dk.renner.website
 
+import dk.renner.website.user.Role
+import dk.renner.website.user.User
+import dk.renner.website.user.UserRole
 import grails.util.Environment
 
 class BootStrap {

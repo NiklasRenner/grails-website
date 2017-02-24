@@ -1,5 +1,6 @@
-package dk.renner.website
+package scribble
 
+import dk.renner.website.scribble.Scribble
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 

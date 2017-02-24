@@ -8,6 +8,7 @@
     <title><g:layoutTitle default="catnip.dk"/></title>
 
     <asset:stylesheet src="bootstrap.css"/>
+    <asset:stylesheet src="bootstrap-select.css"/>
     <asset:stylesheet src="font-awesome.css"/>
     <asset:stylesheet src="freelancer.css"/>
     <asset:stylesheet src="main.css"/>
@@ -28,6 +29,7 @@
 
     <asset:javascript src="jquery.js"/>
     <asset:javascript src="bootstrap.js"/>
+    <asset:javascript src="bootstrap-select.css"/>
     <asset:javascript src="freelancer.js"/>
     <asset:javascript src="clipboard.js"/>
     <asset:javascript src="app.js"/>

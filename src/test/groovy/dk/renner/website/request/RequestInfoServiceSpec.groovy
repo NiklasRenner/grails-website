@@ -1,4 +1,4 @@
-package dk.renner.website
+package dk.renner.website.request
 
 import grails.test.mixin.Mock
 import grails.test.mixin.TestFor

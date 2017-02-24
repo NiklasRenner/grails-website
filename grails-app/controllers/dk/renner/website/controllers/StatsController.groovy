@@ -1,7 +1,6 @@
 package dk.renner.website.controllers
 
-import dk.renner.website.RequestInfoService
-import dk.renner.website.UserService
+import dk.renner.website.request.RequestInfoService
 import grails.plugin.springsecurity.annotation.Secured
 import grails.transaction.Transactional
 
@@ -9,11 +8,10 @@ import grails.transaction.Transactional
 class StatsController {
 
     RequestInfoService requestInfoService
-    UserService userService
 
     @Secured('ROLE_ADMIN')
     def index() {
-        [users: userService.findAll(), requestCount: requestInfoService.countAll(), requestInfos: requestInfoService.findLastRequests()]
+        [requestCount: requestInfoService.countAll(), requestInfos: requestInfoService.findLastRequests()]
     }
 
 }

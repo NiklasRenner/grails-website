@@ -1,4 +1,4 @@
-package dk.renner.website
+package dk.renner.website.user
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
@@ -47,4 +47,5 @@ class User implements Serializable {
 		password column: '`password`'
 		table name: 'users'
 	}
+
 }

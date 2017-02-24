@@ -1,4 +1,4 @@
-package dk.renner.website
+package dk.renner.website.user
 
 import grails.gorm.DetachedCriteria
 import groovy.transform.ToString

@@ -1,13 +1,13 @@
 package dk.renner.website.controllers
 
-import dk.renner.website.Scribble
-import dk.renner.website.ScribbleService
+import dk.renner.website.scribble.Scribble
+import dk.renner.website.scribble.ScribbleService
 
 class ScribblerController {
 
     ScribbleService scribbleService
 
-    def create() {
+    def index() {
         [scribbles: scribbleService.findLastScribbles()]
     }
 

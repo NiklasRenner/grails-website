@@ -1,5 +1,6 @@
-package dk.renner.website
+package dk.renner.website.scribble
 
+import dk.renner.website.util.Constants
 import grails.databinding.BindUsing
 
 class Scribble {

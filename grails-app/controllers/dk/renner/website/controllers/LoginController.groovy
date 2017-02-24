@@ -4,8 +4,4 @@ class LoginController {
 
     def index() {}
 
-    def create(){
-
-    }
-
 }

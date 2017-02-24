@@ -1,6 +1,5 @@
-package dk.renner.website
+package dk.renner.website.interceptors
 
-import dk.renner.website.interceptors.RequestLoggingInterceptor
 import grails.test.mixin.TestFor
 import spock.lang.Specification
 
@@ -8,10 +7,10 @@ import spock.lang.Specification
 class RequestLoggingInterceptorSpec extends Specification {
 
     void "Test requestLogging interceptor matching"() {
-        when:"A request matches the interceptor"
-            withRequest(controller:"requestLogging")
+        when: "A request matches the interceptor"
+            withRequest(controller: "requestLogging")
 
-        then:"The interceptor does match"
+        then: "The interceptor does match"
             interceptor.doesMatch()
     }
 

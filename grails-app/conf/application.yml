@@ -157,21 +157,28 @@ environments:
 grails:
   plugin:
     springsecurity :
-      logout.filterProcessesUrl: '/logout'
-      failureHandler.defaultFailureUrl: '/login?error=true'
       auth.loginFormUrl: '/login'
-      userLookup.userDomainClassName: 'dk.renner.website.User'
-      userLookup.authorityJoinClassName: 'dk.renner.website.UserAuthorityority'
-      authority.className: 'dk.renner.website.Authorityority'
+      failureHandler.defaultFailureUrl: '/login?error=true'
+      logout.filterProcessesUrl: '/logout'
+      userLookup.userDomainClassName: 'dk.renner.website.user.User'
+      userLookup.authorityJoinClassName: 'dk.renner.website.user.UserRole'
+      authority.className: 'dk.renner.website.user.Role'
       adh.errorPage: '/user/denied'
       controllerAnnotations.staticRules:
+        # TODO REVIEW: '/**' pattern matches everything, making everything insecure by default,
+        # but '/' doesn't work, so this is needed for now to access frontpage without being logged in,
+        # therefor all controllers needing security, need to be annotated with '@Secured('ROLE')'.
         - pattern: '/**'
+          access: ['permitAll']
+        - pattern: '/login'
+          access: ['permitAll']
+        - pattern: '/logout'
           access: ['permitAll']
         - pattern: '/login/**'
           access: ['permitAll']
-        - pattern: '/paste'
+        - pattern: '/scribbler'
           access: ['permitAll']
-        - pattern: '/paste/**'
+        - pattern: '/scribbler/**'
           access: ['permitAll']
         - pattern: '/assets/**'
           access: ['permitAll']

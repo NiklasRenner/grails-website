@@ -1,11 +1,11 @@
 //made footer always stick to bottom of screen, by adding margin if content isn't long enough
 var resizeMargin = function () {
     var docHeight = $(window).height();
-    var footerHeight = $('#footer').height();
-    var footerTop = $('#footer').position().top + footerHeight;
+    var footerHeight = $('#contact').height();
+    var footerTop = $('#contact').position().top + footerHeight;
 
     if (footerTop < docHeight) {
-        $('#footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
+        $('#contact').css('margin-top', 10 + (docHeight - footerTop) + 'px');
     }
 };
 

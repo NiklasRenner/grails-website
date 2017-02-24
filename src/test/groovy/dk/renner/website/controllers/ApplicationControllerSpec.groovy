@@ -1,6 +1,6 @@
-package dk.renner.website
+package dk.renner.website.controllers
 
-import dk.renner.website.controllers.ApplicationController
+import dk.renner.website.user.User
 import grails.test.mixin.Mock
 import grails.test.mixin.TestFor
 import spock.lang.Specification

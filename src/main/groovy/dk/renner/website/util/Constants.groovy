@@ -1,5 +1,4 @@
-package dk.renner.website
-
+package dk.renner.website.util
 
 abstract class Constants {
 

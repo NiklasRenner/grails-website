@@ -1,6 +1,8 @@
-package dk.renner.website
+package dk.renner.website.controllers
 
-import dk.renner.website.controllers.StatsController
+import dk.renner.website.request.RequestInfo
+import dk.renner.website.request.RequestInfoService
+import dk.renner.website.user.User
 import grails.test.mixin.Mock
 import grails.test.mixin.TestFor
 import spock.lang.Specification
@@ -10,7 +12,6 @@ import spock.lang.Specification
 class StatsControllerSpec extends Specification {
 
     def setup() {
-        controller.userService = Mock(UserService)
         controller.requestInfoService = Mock(RequestInfoService)
     }
 
@@ -19,7 +20,6 @@ class StatsControllerSpec extends Specification {
             controller.index()
 
         then:
-            1 * controller.userService.findAll()
             1 * controller.requestInfoService.countAll()
             1 * controller.requestInfoService.findLastRequests()
     }

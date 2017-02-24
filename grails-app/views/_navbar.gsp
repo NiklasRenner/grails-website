@@ -42,6 +42,11 @@
                                         <g:message code="frontend.stats"/>
                                     </g:link>
                                 </li>
+                                <li>
+                                    <g:link mapping="userIndex">
+                                        <g:message code="frontend.users"/>
+                                    </g:link>
+                                </li>
                             </ul>
                         </li>
                     </sec:ifAllGranted>

@@ -13,7 +13,7 @@ class UrlMappings {
         //scribbler
         name scribblerCreate: "/scribbler" {
             controller = 'scribbler'
-            action = 'create'
+            action = 'index'
             method = 'GET'
         }
 
@@ -34,6 +34,18 @@ class UrlMappings {
             controller = 'stats'
             action = 'index'
             method = 'GET'
+        }
+
+        name userIndex: "/user" {
+            controller = 'user'
+            action = 'index'
+            method = 'GET'
+        }
+
+        name userPost: "/user/post" {
+            controller = 'user'
+            action = 'post'
+            method = 'POST'
         }
 
         //auth

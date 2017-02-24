@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <section id="paster">
+    <section id="scribbler">
         <div class="container">
             <div class="row control-group">
                 <div class="col-lg-12">
