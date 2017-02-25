@@ -821,3 +821,13 @@
         }, {"./clipboard-action": 7, "good-listener": 4, "tiny-emitter": 6}]
     }, {}, [8])(8)
 });
+
+
+//added listener for clipboard.js
+var clipboardDemos = new Clipboard('[data-clipboard-copy-link]');
+clipboardDemos.on('success', function (e) {
+    e.clearSelection();
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+});

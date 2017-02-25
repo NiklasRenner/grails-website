@@ -36,6 +36,12 @@ class UrlMappings {
             method = 'GET'
         }
 
+        name requestShow: "/request/$id" {
+            controller = 'stats'
+            action = 'show'
+            method = 'GET'
+        }
+
         name userIndex: "/user" {
             controller = 'user'
             action = 'index'

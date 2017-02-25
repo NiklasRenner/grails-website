@@ -10,7 +10,7 @@ class ScribbleService {
     LinkGenerator grailsLinkGenerator
 
     List<Scribble> findLastScribbles() {
-        Scribble.list max: 10, sort: 'frontend.dateCreated', order: 'desc'
+        Scribble.list max: 10, sort: 'dateCreated', order: 'desc'
     }
 
     Scribble find(String id) {

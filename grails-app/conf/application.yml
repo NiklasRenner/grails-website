@@ -132,14 +132,14 @@ environments:
             dataSource:
                 logSql: true
                 dbCreate: none
-                url: jdbc:postgresql://postgres:5432/website
+                url: jdbc:postgresql://localhost:5432/website
                 username: website_app
                 password: website_app
                 driverClassName: org.postgresql.Driver
 
             adm:
                 dbCreate: none
-                url: jdbc:postgresql://postgres:5432/website
+                url: jdbc:postgresql://localhost:5432/website
                 username: website_adm
                 password: website_adm
                 driverClassName: org.postgresql.Driver

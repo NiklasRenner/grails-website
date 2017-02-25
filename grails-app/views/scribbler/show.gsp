@@ -17,10 +17,12 @@
                         </button>
                     </h1>
 
-                    <pre class="lead">${new String(scribble.data)}</pre>
+                    <pre><code>${new String(scribble.data)}</code></pre>
                 </div>
             </div>
         </div>
     </section>
+
+    <asset:javascript src="clipboard.js"/>
 </body>
 </html>

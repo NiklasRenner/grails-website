@@ -16,7 +16,8 @@ buildscript {
 
 apply plugin: "eclipse"
 apply plugin: "idea"
-apply plugin: "war"
+//TODO REFACTOR: disabled for now since Tomcat isn't used atm, instead bootable JAR is created
+//apply plugin: "war"
 apply plugin: "org.grails.grails-web"
 apply plugin: "org.grails.grails-gsp"
 apply plugin: "asset-pipeline"
@@ -51,6 +52,9 @@ dependencies {
     compile "org.hibernate:hibernate-ehcache:5.1.2.Final"
     compile 'org.grails.plugins:spring-security-core:3.1.1'
 
+    // easy REST
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+
     // Database migration plugin and recommended liquibase dependency
     // See http://grails-plugins.github.io/grails-database-migration/3.0.x/index.html
     compile "org.grails.plugins:database-migration:3.0.0"
@@ -82,4 +86,10 @@ sourceSets {
             srcDir 'grails-app/migrations'
         }
     }
+}
+
+springBoot {
+    // Enable the creation of a fully
+    // executable archive file.
+    executable = true
 }

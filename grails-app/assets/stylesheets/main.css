@@ -1,6 +1,6 @@
 /*make header image dynamic size*/
 .img-circle {
-    width: 40%;
+    width: 50%;
 }
 
 /*fix header margin being a bit large*/
@@ -11,6 +11,12 @@
 /*new class to make sub-page-headers margin disappear at the top*/
 .sub-header {
     margin-top: 0;
+}
+
+/*google maps styling*/
+#map {
+    height: 400px;
+    width: 100%;
 }
 
 /*fix success & hover making table rows all white when hovering over them*/
@@ -64,5 +70,9 @@ select {
     font-size: 18px;
     line-height: 20px;
     display: inline-block;
+}
+
+pre {
+    background-color: white;
 }
 

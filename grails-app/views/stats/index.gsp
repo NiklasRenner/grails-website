@@ -25,7 +25,7 @@
                         <tbody>
                         <g:each in="${requestInfos}" var="requestInfo">
                             <tr>
-                                <td>${requestInfo.clientIp}</td>
+                                <td><g:link mapping="requestShow" id="${requestInfo.id}">${requestInfo.clientIp}</g:link></td>
                                 <td>${requestInfo.requestUri}</td>
                                 <td><g:formatDate date="${requestInfo.dateCreated}"/></td>
                             </tr>
