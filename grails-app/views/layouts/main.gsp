@@ -10,9 +10,8 @@
     <asset:stylesheet src="bootstrap.css"/>
     <asset:stylesheet src="font-awesome.css"/>
     <asset:stylesheet src="freelancer.css"/>
+    <asset:stylesheet src="github-gist.css"/>
     <asset:stylesheet src="main.css"/>
-
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.9.0/styles/github-gist.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
@@ -31,8 +30,8 @@
     <asset:javascript src="jquery.js"/>
     <asset:javascript src="bootstrap.js"/>
     <asset:javascript src="freelancer.js"/>
+    <asset:javascript src="highlight.pack.js"/>
     <asset:javascript src="app.js"/>
-    <script src="//cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js"></script>
 
 </body>
 </html>
