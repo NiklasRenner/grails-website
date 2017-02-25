@@ -1,3 +1,4 @@
+<%@ page import="grails.util.Environment" %>
 <nav id="main-nav" class="navbar navbar-default navbar-fixed-top navbar-custom">
     <div class="container">
         <div class="navbar-header">
@@ -6,6 +7,9 @@
             </button>
             <g:link mapping="index" class="navbar-brand">
                 <g:message code="frontend.home"/>
+                <g:if test="${Environment.current.name in ['test', 'development']}">
+                    <p style="color: red;">Env -> ${Environment.current}</p>
+                </g:if>
             </g:link>
         </div>
 
