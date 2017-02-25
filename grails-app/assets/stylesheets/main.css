@@ -66,8 +66,3 @@ select {
     display: inline-block;
 }
 
-select:focus {
-
-    border: none;
-}
-
