@@ -1,6 +1,7 @@
 <head>
     <meta name="layout" content="main"/>
     <title><g:message code="frontend.requests"/></title>
+    %{--TODO REFACTOR: clean up page--}%
 </head>
 
 <body>
