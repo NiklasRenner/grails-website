@@ -31,7 +31,6 @@
                             <div class="form-group col-xs-12">
                                 <select title="role" name="authority">
                                     <g:each in="${roles}" var="role">
-                                    <label>Hello</label>
                                         <option value="${role.authority}">${role.pretty}</option>
                                     </g:each>
                                 </select>
@@ -61,16 +60,16 @@
                         <thead>
                         <tr>
                             <td><g:message code="frontend.username"/></td>
-                            <td><g:message code="frontend.encryptedPassword"/></td>
                             <td><g:message code="frontend.roles"/></td>
+                            <td><g:message code="frontend.dateCreated"/></td>
                         </tr>
                         </thead>
                         <tbody>
                         <g:each in="${users}" var="user">
                             <tr>
                                 <td>${user.username}</td>
-                                <td>${user.password}</td>
                                 <td>${user.authorities.collect { it.authority }.join(',')}</td>
+                                <td><g:formatDate date="${user.dateCreated}"/></td>
                             </tr>
                         </g:each>
                         </tbody>

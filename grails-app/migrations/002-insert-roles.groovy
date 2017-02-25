@@ -3,11 +3,13 @@ databaseChangeLog = {
         insert(tableName: "roles") {
             column(name: "authority", value: "ROLE_ADMIN")
             column(name: "version", value: "1")
+            column(name: "date_created", value: new Date())
         }
 
         insert(tableName: "roles") {
             column(name: "authority", value: "ROLE_USER")
             column(name: "version", value: "1")
+            column(name: "date_created", value: new Date())
         }
     }
 }

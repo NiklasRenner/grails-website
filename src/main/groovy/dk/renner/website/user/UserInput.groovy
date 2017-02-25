@@ -1,6 +1,8 @@
 package dk.renner.website.user
 
-class UserInput {
+import grails.validation.Validateable
+
+class UserInput implements Validateable {
 
     //user
     String username

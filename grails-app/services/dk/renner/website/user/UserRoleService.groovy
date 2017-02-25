@@ -13,7 +13,7 @@ class UserRoleService {
         def user = input as User
 
         if (!role || !user.validate()) {
-            println input.properties
+            log.error "Request to create user failed with parameters $input.properties"
             return
         }
 

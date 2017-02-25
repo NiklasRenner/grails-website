@@ -64,7 +64,7 @@
                         <tr>
                             <td><g:message code="frontend.id"/></td>
                             <td><g:message code="frontend.title"/></td>
-                            <td><g:message code="frontend.timeOfCreation"/></td>
+                            <td><g:message code="frontend.dateCreated"/></td>
                         </tr>
                         </thead>
                         <tbody>

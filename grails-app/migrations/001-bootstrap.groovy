@@ -41,6 +41,10 @@ databaseChangeLog = {
             column(name: "authority", type: "VARCHAR(255)") {
                 constraints(nullable: "false")
             }
+
+            column(name: "date_created", type: "TIMESTAMP WITHOUT TIME ZONE") {
+                constraints(nullable: "false")
+            }
         }
     }
 
@@ -101,6 +105,10 @@ databaseChangeLog = {
             column(name: "username", type: "VARCHAR(255)") {
                 constraints(nullable: "false")
             }
+
+            column(name: "date_created", type: "TIMESTAMP WITHOUT TIME ZONE") {
+                constraints(nullable: "false")
+            }
         }
     }
 
@@ -111,6 +119,10 @@ databaseChangeLog = {
             }
 
             column(name: "role_id", type: "BIGINT") {
+                constraints(nullable: "false")
+            }
+
+            column(name: "date_created", type: "TIMESTAMP WITHOUT TIME ZONE") {
                 constraints(nullable: "false")
             }
         }

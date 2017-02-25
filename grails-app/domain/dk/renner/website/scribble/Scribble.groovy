@@ -2,7 +2,9 @@ package dk.renner.website.scribble
 
 import dk.renner.website.util.Constants
 import grails.databinding.BindUsing
+import groovy.transform.ToString
 
+@ToString(includeNames = false, includePackage = false)
 class Scribble {
 
     UUID id

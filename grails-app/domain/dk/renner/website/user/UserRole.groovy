@@ -11,6 +11,7 @@ class UserRole implements Serializable {
 
     User user
     Role role
+    Date dateCreated
 
     @Override
     boolean equals(other) {
